@@ -7,7 +7,7 @@ class App extends Component {
   render(){
     return (
       <Layout>
-        {this.state.show ? <BurgerBuilder /> : null}
+        <BurgerBuilder />
       </Layout>
     );
   }
