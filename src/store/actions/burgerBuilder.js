@@ -30,13 +30,13 @@ export const fetchIngredientsFailed = () => {
 
 
 export const initIngredients = () => {
-  return dispatch => {
-    axios.get( 'https://react-burger-d3810-default-rtdb.firebaseio.com/ingredients.json' )
-      .then( response => {
+    return dispatch => {
+        axios.get( 'https://react-burger-d3810-default-rtdb.firebaseio.com/ingredients.json' )
+        .then( response => {
         dispatch(setIngredients(response.data))
-      })
-      .catch( error => {
+        })
+        .catch( error => {
         dispatch(fetchIngredientsFailed())
-      })
-  }
+        })
+    }
 }
