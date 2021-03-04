@@ -4,6 +4,7 @@ import * as actionTypes from './actionTypes'
 require('dotenv').config()
 const key = process.env.REACT_APP_KEY
 
+
 export const authStart = () => {
   return {
     type: actionTypes.AUTH_START
